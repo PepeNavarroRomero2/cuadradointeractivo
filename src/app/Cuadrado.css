@@ -1,0 +1,61 @@
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    position: relative;
+  }
+  
+  .decorativo {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 60%;
+    background-color: #ff6347;
+  }
+  
+  .detrás {
+    z-index: 1;
+    top: 50px;
+    left: 50px;
+  }
+  
+  .delante {
+    z-index: 2;
+    top: -50px;
+    left: -50px;
+    background-color: #00bfff;
+  }
+  
+  .cuadrado {
+    width: 200px;
+    height: 200px;
+    background-color: #3498db;
+    border: 5px solid #2980b9;
+    border-radius: 15px;
+    transition: background-color 0.5s, box-shadow 0.5s, transform 0.3s;
+    animation: latir 3s infinite;
+    z-index: 3;
+    cursor: pointer;
+  }
+  
+  .cuadrado:hover {
+    background-color: #2ecc71;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cuadrado.activo {
+    transform: rotate(45deg) scale(1.5);
+  }
+  
+  @keyframes latir {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.6;
+    }
+  }
+  
