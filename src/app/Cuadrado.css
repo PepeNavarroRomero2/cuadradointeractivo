@@ -13,7 +13,7 @@
     width: 500px;
     height: 500px;
     border-radius: 60%;
-    background-color: #ff6347;
+    background-color: #47ff63;
   }
   
   .detrás {
@@ -26,14 +26,14 @@
     z-index: 2;
     top: -50px;
     left: -50px;
-    background-color: #00bfff;
+    background-color: #e5ff00;
   }
   
   .cuadrado {
     width: 200px;
     height: 200px;
-    background-color: #3498db;
-    border: 5px solid #2980b9;
+    background-color: #6c7f8c;
+    border: 5px solid #131314;
     border-radius: 15px;
     transition: background-color 0.5s, box-shadow 0.5s, transform 0.3s;
     animation: latir 3s infinite;
@@ -42,7 +42,7 @@
   }
   
   .cuadrado:hover {
-    background-color: #2ecc71;
+    background-color: #9deefe;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
   }
   
