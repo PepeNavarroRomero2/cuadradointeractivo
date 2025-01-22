@@ -36,7 +36,7 @@
     border: 5px solid #131314;
     border-radius: 15px;
     transition: background-color 0.5s, box-shadow 0.5s, transform 0.3s;
-    animation: latir 3s infinite ease-in-out; /* Asegura una animación suave */
+    animation: latir 3s infinite ease-in-out;
     z-index: 3;
     cursor: pointer;
 }
