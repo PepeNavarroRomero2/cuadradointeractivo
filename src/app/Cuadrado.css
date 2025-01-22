@@ -6,56 +6,55 @@
     margin: 0;
     background-color: #f0f0f0;
     position: relative;
-  }
-  
-  .decorativo {
+}
+
+.decorativo {
     position: absolute;
     width: 500px;
     height: 500px;
     border-radius: 60%;
     background-color: #47ff63;
-  }
-  
-  .detrás {
+}
+
+.detrás {
     z-index: 1;
     top: 50px;
     left: 50px;
-  }
-  
-  .delante {
+}
+
+.delante {
     z-index: 2;
     top: -50px;
     left: -50px;
     background-color: #e5ff00;
-  }
-  
-  .cuadrado {
+}
+
+.cuadrado {
     width: 200px;
     height: 200px;
     background-color: #6c7f8c;
     border: 5px solid #131314;
     border-radius: 15px;
     transition: background-color 0.5s, box-shadow 0.5s, transform 0.3s;
-    animation: latir 3s infinite;
+    animation: latir 3s infinite ease-in-out; /* Asegura una animación suave */
     z-index: 3;
     cursor: pointer;
-  }
-  
-  .cuadrado:hover {
+}
+
+.cuadrado:hover {
     background-color: #9deefe;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
-  }
-  
-  .cuadrado.activo {
+}
+
+.cuadrado.activo {
     transform: rotate(45deg) scale(1.5);
-  }
-  
-  @keyframes latir {
+}
+
+@keyframes latir {
     0%, 100% {
-      opacity: 1;
+        opacity: 1;
     }
     50% {
-      opacity: 0.6;
+        opacity: 0.6;
     }
-  }
-  
+}
